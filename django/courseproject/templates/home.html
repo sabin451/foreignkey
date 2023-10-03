@@ -1,0 +1,247 @@
+{% extends 'nav.html' %}
+{% block content %}
+    <style>
+    body, h1, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and navigation */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    background-image: url('kerala-tourism-title.png');
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the hero section */
+.hero-image {
+  
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    animation: fadeIn 2s ease;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: forestgreen;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Style the about section */
+.about-container {
+    width: 95%;
+    margin: 0;
+    padding: 0 20px;
+    text-align: justify;
+    line-height: 1.5;
+
+    
+}
+
+/* Style the places section */
+.places-container {
+   
+    /* Add your styles here */
+width: 95%;
+margin: 0;
+padding: 0 20px;
+text-align: justify;
+line-height: 1.5;
+
+}
+
+/* Style the contact section */
+.contact-container {
+    max-width: 600px;
+    margin:0;
+    padding: 0 20px;
+    
+    
+}
+
+.contact-container h2 {
+   
+    margin-bottom: 20px;
+}
+.Vedio {
+width: 100%;
+margin: 0;
+padding: 0 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style the footer */
+footer {
+    
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+h2{
+    margin-top: 20px;
+}
+.image-container {
+            display: inline-block;
+            margin: 20px;
+            width: 250px;
+            padding: 30px;
+            border: 15px ;
+            text-align: center;
+}
+.image-container img {
+            width: 100%;
+            height: auto;
+}
+.image-description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #444;
+}
+.Search input[type=text]{
+            float: left;
+            padding: 6px;
+            border: none;
+            margin-top: 0px;
+            margin-right: 16px; 
+            font-size: 15px;
+            border-radius: 10px;
+            color: black;
+}
+
+/* @keyframes colorChange{ 
+     0% {
+        background-color: #1ddd46;
+    }
+    50% {
+        background-color: #e5f17c;
+    }
+    100% {
+        background-color: #190944;
+    }
+}
+a {
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+   
+
+} */
+@keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+a:hover {
+   background-color: silver;
+}
+.iframe-container {
+    align-items: center;
+    margin-left: 35%; 
+    
+    
+     /* Add some margin if needed */
+}
+ .carousel-item {
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+    }
+    .carousel-caption {
+      text-align: center;
+      bottom: 25%;
+    }
+    </style>
+</head>
+
+    <header class="header">
+    </header>
+    {% load static %}
+    <div class="carousel-item active" style="background-image:url('{% static "images/home.jpg" %}');">
+    <div class="carousel-caption">
+ 
+    {% endblock %}
+</body>
+</html>
